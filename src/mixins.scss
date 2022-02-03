@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+@mixin common {
+	color: $colorText;
+	line-height: 1.7rem;
+}
+
+@mixin customFooter {
+	@include common();
+	margin: 1rem 0;
+	text-align: center;
+}
+
+@mixin containers {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin separator {
+	border: 1px solid $colorText;
+	width: 90%;
+}
+
+@mixin transition-hover() {
+	transition: transform 100ms;
+	transform: scale(1.1);
+}

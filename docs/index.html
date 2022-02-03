@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/lpcv-app/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="google" content="notranslate" />
+    <title>Mi Landing Page</title>
+    <script type="module" crossorigin src="/lpcv-app/assets/index.5b7a112d.js"></script>
+    <link rel="modulepreload" href="/lpcv-app/assets/vendor.cd4dab64.js">
+    <link rel="stylesheet" href="/lpcv-app/assets/index.48de900b.css">
+  </head>
+  <body>
+    <div id="root"></div>
+		<script>
+			(function () {
+				let redirect = sessionStorage.redirect;
+				delete sessionStorage.redirect;
+				if (redirect && redirect != location.href) {
+					history.replaceState(null, null, redirect);
+					// REMOVE THIS - just showing the redirect route in the UI
+					document.body.setAttribute(
+						'message',
+						'This page was redirected by 404.html, from the route: ' + redirect,
+					);
+				} else {
+					// REMOVE THIS - just showing the redirect route in the UI
+					document.body.setAttribute(
+						'message',
+						'This page was loaded directly from the index.html file',
+					);
+				}
+			})();
+		</script>
+    
+  </body>
+</html>

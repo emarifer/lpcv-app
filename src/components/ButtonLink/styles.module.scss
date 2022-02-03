@@ -1,0 +1,28 @@
+@use '../../mixins.scss';
+@import '../../variables.scss';
+
+.buttonLink {
+	align-items: center;
+	background: $color;
+	border-radius: 3px;
+	color: whitesmoke;
+	display: flex;
+	font-size: 1.2rem;
+	font-weight: 600;
+	gap: 0.6rem;
+	justify-content: center;
+	margin: 1rem auto;
+	padding: 1rem 1.3rem;
+	text-decoration: none;
+
+	@media (hover: hover) {
+		&:hover {
+			@include mixins.transition-hover();
+		}
+	}
+
+	&:active {
+		transition: transform 100ms;
+		transform: scale(1.06);
+	}
+}
