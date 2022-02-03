@@ -19,6 +19,7 @@ export default ({ mode }) => {
 				registerType: 'autoUpdate',
 				includeAssets: [
 					'img/favicon.ico',
+					'img/avatar.jpeg',
 					'robots.txt',
 					'fonts/ubuntu.woff2',
 					'icons/apple-touch-icon.png',
