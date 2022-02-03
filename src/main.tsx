@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
+import { registerSW } from 'virtual:pwa-register';
 
 import './index.css';
 
@@ -10,6 +11,8 @@ ReactDOM.render(
 	</React.StrictMode>,
 	document.getElementById('root'),
 );
+
+registerSW();
 
 /**
  * ERRORES IDE 'NO SE PUEDE ENCONTRAR EL MÓDULO' (TS2307):
