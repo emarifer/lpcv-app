@@ -20,4 +20,13 @@ registerSW();
  *
  * Options Operator Linebreak:
  * https://eslint.org/docs/2.0.0/rules/operator-linebreak#options
+ *
+ * Terrible Ways (and 4 Better Ways) to fix 'TS7016: Could not find declaration file':
+ * https://blog.atomist.com/declaration-file-fix/
+ *
+ * CONFIGURACION DE REACT-TO-PRINT:
+ * https://www.npmjs.com/package/react-to-print
+ * https://stackoverflow.com/questions/61022107/how-to-use-react-to-print-with-typescript
+ * https://github.com/gregnb/react-to-print#printing-elements-that-are-not-displayed-159
+ * https://github.com/gregnb/react-to-print/issues/120#issuecomment-485432910
  */

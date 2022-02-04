@@ -1,4 +1,35 @@
 @use '../../mixins.scss';
+@import '../../variables.scss';
+
+.printButton {
+	align-items: center;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 1px solid #db6b0f;
+	color: #db6b0f;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.2rem;
+	height: 2rem;
+	justify-content: center;
+	outline: none;
+	position: fixed;
+	right: 1rem;
+	top: 5rem;
+	width: 2rem;
+	z-index: 10;
+
+	@media (hover: hover) {
+		&:hover {
+			@include mixins.transition-hover();
+		}
+	}
+
+	&:active {
+		transition: transform 100ms;
+		transform: scale(1.06);
+	}
+}
 
 .title {
 	font-size: 2.3rem;
