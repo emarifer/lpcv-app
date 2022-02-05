@@ -1,8 +1,9 @@
+import { pageStyle } from './printPageStyle';
+import { ReactComponent as Md /* , attributes */ } from '../markdown/post.md';
+import { AiFillPrinter } from 'react-icons/ai';
 import { Helmet } from 'react-helmet-async';
 import { useReactToPrint } from 'react-to-print';
 import { useRef } from 'react';
-import { ReactComponent as Md /* , attributes */ } from '../markdown/post.md';
-import { AiFillPrinter } from 'react-icons/ai';
 
 import styles from './styles.module.scss';
 
@@ -15,21 +16,10 @@ export const MyCV = () => {
 		printButton,
 	} = styles;
 
-	const pageStyle = `
-		@page {
-			size: 210mm 297mm;
-		}
-		@media print {
-			.printSection {
-				padding: 20px;
-			}
-		}
-		`;
-
-	const componentRef = useRef<HTMLDivElement>(null);
+	const printContentRef = useRef<HTMLDivElement>(null);
 
 	const handlePrint = useReactToPrint({
-		content: () => componentRef.current,
+		content: () => printContentRef.current,
 		pageStyle,
 		suppressErrors: true,
 	});
@@ -44,11 +34,7 @@ export const MyCV = () => {
 				<AiFillPrinter />
 			</button>
 
-			<div
-				ref={componentRef}
-				style={{ backgroundColor: '#282c34' }}
-				className="printSection"
-			>
+			<div ref={printContentRef} className="printSection">
 				<header className={title}>Mi Curriculum Vitae</header>
 
 				<main className={markdownStyles}>

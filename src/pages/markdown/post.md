@@ -21,7 +21,7 @@
 ---
 
 - **Titulación**: Ingeniería Técnica Agrícola (1988, Universidad de Sevilla)
-- **Lenguajes de Programación**: HTML, CSS, JavaScript, Python, Java, Kotlin, Desarrollo Frontend & Backend, Curso Deusto de Desarrollo de Aplicaciones Móviles en Android
+- **Lenguajes de Programación**: HTML, CSS, JavaScript, TypeScript, React.js, Vue.js, Node.js, Python, Java, Kotlin, Desarrollo Frontend & Backend, Curso «React Pro: Lleva tus bases al siguiente nivel» (Udemy), Curso Deusto de Desarrollo de Aplicaciones Móviles en Android
 - **Tratamiento de Imágenes y Dibujo**: Adobe Illustrator, Adobe PhotoShop, Gimp, Inkscape
 - **Cartografía Digital**: ArcGIS, gvSIG
 - **Maquetación y Edición Digital**: Adobe InDesign, QuarkXPress
