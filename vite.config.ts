@@ -25,6 +25,10 @@ export default ({ mode }) => {
 					'icons/apple-touch-icon.png',
 					'icons/android-chrome-192x192.png',
 					'icons/android-chrome-512x512.png',
+					'icons/safari-pinned-tab.svg',
+					'icons/favicon-16x16.png',
+					'icons/favicon-32x32.png',
+					'icons/mstile-150x150.png',
 				],
 				manifest: {
 					name: 'Mi Landing Page',
@@ -47,6 +51,12 @@ export default ({ mode }) => {
 							src: 'icons/android-chrome-512x512.png',
 							sizes: '512x512',
 							type: 'image/png',
+						},
+						{
+							src: 'icons/safari-pinned-tab.svg',
+							sizes: '640x640',
+							type: 'image/svg+xml',
+							purpose: 'any maskable',
 						},
 					],
 					start_url: '.',
