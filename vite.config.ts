@@ -6,9 +6,9 @@ import md from 'vite-plugin-react-md';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default ({ mode }) => {
-	const url = loadEnv(mode, process.cwd()).VITE_BASE_URL;
-	const base =
-		mode === 'production' ? (url && url.length !== 0 ? `/${url}/` : '/') : '';
+	const base = loadEnv(mode, process.cwd()).VITE_BASE_URL
+		? `/${loadEnv(mode, process.cwd()).VITE_BASE_URL}/`
+		: '/';
 
 	return defineConfig({
 		base,

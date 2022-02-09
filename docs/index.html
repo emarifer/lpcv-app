@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/lpcv-app/img/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta name="google" content="notranslate" />
-    <title>Mi Landing Page</title>
-    <script type="module" crossorigin src="/lpcv-app/assets/index.9275d218.js"></script>
-    <link rel="modulepreload" href="/lpcv-app/assets/vendor.456345aa.js">
-    <link rel="stylesheet" href="/lpcv-app/assets/index.eaf0182b.css">
-  <link rel="manifest" href="/lpcv-app/manifest.webmanifest"></head>
-  <body>
-    <div id="root"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href="/lpcv-app/img/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/lpcv-app/icons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/lpcv-app/icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/lpcv-app/icons/favicon-16x16.png"
+		/>
+		<link rel="mask-icon" href="/lpcv-app/icons/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#7300e6" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
+		<meta name="google" content="notranslate" />
+		<meta name="description" content="curriculum vitae, landing page" />
+		<title>Mi Landing Page</title>
+		<script type="module" crossorigin src="/lpcv-app/assets/index.9275d218.js"></script>
+		<link rel="modulepreload" href="/lpcv-app/assets/vendor.456345aa.js">
+		<link rel="stylesheet" href="/lpcv-app/assets/index.eaf0182b.css">
+	<link rel="manifest" href="/lpcv-app/manifest.webmanifest"></head>
+	<body>
+		<div id="root"></div>
 		<script>
-			(function () {
-				let redirect = sessionStorage.redirect;
+			(() => {
+				const redirect = sessionStorage.redirect;
 				delete sessionStorage.redirect;
-				if (redirect && redirect != location.href) {
+				redirect &&
+					redirect !== location.href &&
 					history.replaceState(null, null, redirect);
-					// REMOVE THIS - just showing the redirect route in the UI
-					document.body.setAttribute(
-						'message',
-						'This page was redirected by 404.html, from the route: ' + redirect,
-					);
-				} else {
-					// REMOVE THIS - just showing the redirect route in the UI
-					document.body.setAttribute(
-						'message',
-						'This page was loaded directly from the index.html file',
-					);
-				}
 			})();
 		</script>
-    
-  </body>
+		
+	</body>
 </html>
