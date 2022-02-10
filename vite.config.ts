@@ -5,13 +5,11 @@ import react from '@vitejs/plugin-react';
 import md from 'vite-plugin-react-md';
 import { VitePWA } from 'vite-plugin-pwa';
 
-export default ({ mode }) => {
-	const base = loadEnv(mode, process.cwd()).VITE_BASE_URL
-		? `/${loadEnv(mode, process.cwd()).VITE_BASE_URL}/`
-		: '/';
-
-	return defineConfig({
-		base,
+export default ({ mode }) =>
+	defineConfig({
+		base: loadEnv(mode, process.cwd()).VITE_BASE_URL
+			? `/${loadEnv(mode, process.cwd()).VITE_BASE_URL}/`
+			: '/',
 		plugins: [
 			react(),
 			md(),
@@ -66,7 +64,6 @@ export default ({ mode }) => {
 			}),
 		],
 	});
-};
 
 /**
  * Options Operator Linebreak:

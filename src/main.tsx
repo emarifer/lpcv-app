@@ -29,4 +29,7 @@ registerSW();
  * https://stackoverflow.com/questions/61022107/how-to-use-react-to-print-with-typescript
  * https://github.com/gregnb/react-to-print#printing-elements-that-are-not-displayed-159
  * https://github.com/gregnb/react-to-print/issues/120#issuecomment-485432910
+ *
+ * USO DE framer-motion:
+ * https://codesandbox.io/s/framer-motion-page-transition-with-wouter-ohp6s?file=/src/index.tsx:618-640
  */

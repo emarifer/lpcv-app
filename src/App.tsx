@@ -40,8 +40,8 @@ export const App = () => {
 
 				<div className={container}>
 					<Switch>
-						<Route path="/" component={Home} />
-						<Route path="cv-page" component={MyCV} />
+						<Home key="1" path="/" />
+						<MyCV key="2" path="cv-page" />
 						<Route path=":anything*">
 							<Redirect to="." />
 						</Route>
@@ -57,4 +57,7 @@ export const App = () => {
 /**
  * Options Operator Linebreak:
  * https://eslint.org/docs/2.0.0/rules/operator-linebreak#options
+ *
+ * USO DE framer-motion:
+ * https://codesandbox.io/s/framer-motion-page-transition-with-wouter-ohp6s?file=/src/index.tsx:618-640
  */

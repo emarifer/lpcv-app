@@ -54,10 +54,12 @@
 }
 
 .navLinkStyles {
+	border-bottom: 3px solid transparent;
 	color: $color;
 	font-weight: bolder;
 	padding-bottom: 3px;
 	text-decoration: none;
+	transition: border-bottom 1s ease;
 }
 
 .active {
